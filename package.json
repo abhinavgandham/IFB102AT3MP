@@ -1,0 +1,23 @@
+{
+  "name": "ifb102-mini-project",
+  "version": "1.0.0",
+  "description": "Mini project which integrates the TinyMCE rich text editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinavgandham/IFB102AT3MP.git"
+  },
+  "keywords": [
+    "ifb102",
+    "mini-project"
+  ],
+  "author": "Abhinav Gandham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhinavgandham/IFB102AT3MP/issues"
+  },
+  "homepage": "https://github.com/abhinavgandham/IFB102AT3MP#readme"
+}
