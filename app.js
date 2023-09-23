@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const port = process.env.PORT || 8888;
 
-// -------Defining the route - req = Request Object, res = Response Object---------
+// -------Defining the route - req = Request Object, res = Response Object-------
 //  Serving the HTML file
 app.use(express.static(__dirname));
 
