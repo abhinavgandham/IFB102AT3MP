@@ -1,3 +1,5 @@
+// Boiler plate code to display editor and for save/load functionality
+
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize TinyMCE
   tinymce.init({
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Dropbox access token
   const accessToken =
-    "sl.BmlSw40D4p_ZiSSjDHXNm2wN6ySnMJBHqXtcajC0AdARwIddyC6z79hRU_pzEBHKW79euMlr6-rlxx7IyOjlRwBcR0LTjZh2pJe7-88DAHdQoETZWlJfu9oWRTzAHR3MloGZ7F-VD8y4";
+    "sl.BnLhG1AMt8DWPVYtCDWyoS8laizxEPWs5wWhvnC98djlZBenN7SbR5MsUJbZqYLZNcmUXwrRGwTFg_B6hYnWlGPd4gCr9zmHfOHe834u96ggl6cGBJqOd6AgE058eprcpygb_qi8FKNK";
 
   // Save content to Dropbox
   document.getElementById("save-button").addEventListener("click", function () {
