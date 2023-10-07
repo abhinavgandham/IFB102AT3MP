@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Dropbox access token
   const accessToken =
-    "sl.BnWU8l57lumhD3exUDnktP386cjWPvX7l6yFcxfs8CeXwY7s-wqaz4RkUC2U3M78DPPcM6sv0Ti4yX78c1LNnCt2xInhWZuX-wBYvl4cWv17zeRD2_lQfEugswrL1jOF5kdAcwOUL4sQ";
+    "sl.BndwYHQzNPbeQvBjdjrxO_BHdDAtQMvPCjJfkl_G8A6zUX6GadYnjeuHhU08LDLkEyrKUjjfqG55wAkv00Cs2SQG7iAxU5JwKmLflIY-C5HSmz2hzjeh0i-WXHcqrWg7D9NOtmQbZdEF";
 
   // Save content to Dropbox
   document.getElementById("save-button").addEventListener("click", function () {
