@@ -2,7 +2,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = process.env.PORT || 8888;
+require("dotenv").config();
+const port = process.env.PORT;
 
 // -------Defining the route - req = Request Object, res = Response Object-------
 //  Serving the HTML file
