@@ -13,12 +13,17 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Using Internal CSS for some custom styles -->
+    <style></style>
   </head>
-  <body>
-    <h1>TinyMCE Editor</h1>
-    <button id="save-button">Save</button>
-    <button id="load-button">Load</button>
-    <textarea id="editor"></textarea>
+  <body class="bg-primary">
+    <!--Setting the size and style of the heading and centering it  -->
+    <h1 class="display-4 text-center mt-4 text-white">TinyMCE Editor</h1>
+    <div class="text-center">
+      <button id="save-button" class="btn-lg rounded-2">Save</button>
+      <button id="load-button" class="btn-lg rounded-2">Load</button>
+    </div>
+    <textarea id="editor" class="pl-3 pr-3"></textarea>
     <script src="/main.js"></script>
   </body>
 </html>

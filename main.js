@@ -12,10 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Dropbox access token
   const accessToken =
-    "sl.BndwYHQzNPbeQvBjdjrxO_BHdDAtQMvPCjJfkl_G8A6zUX6GadYnjeuHhU08LDLkEyrKUjjfqG55wAkv00Cs2SQG7iAxU5JwKmLflIY-C5HSmz2hzjeh0i-WXHcqrWg7D9NOtmQbZdEF";
+    "sl.BngIi5CzWAUQ8m041hSseJc2W8GzNjn7V9ZtZlwrjhyzX8h-mT5-p95GhTUnN2V6sjEV7GW7_z9yT1OjnZAIPSuLLnZhGBsHPdb7ECf82X-k7A9to5D-6J5otsbKNfy7EjhF-XRSRqZ5";
 
   // Save content to Dropbox
   document.getElementById("save-button").addEventListener("click", function () {
+    // Some variables for adding on to existing functionality
+    const bodySection = document.querySelector("body");
+    const message = document.createElement("h2");
+    // These are just the defualt variables from the company
     const content = tinymce.activeEditor.getContent();
     const blob = new Blob([content], { type: "text/html" });
     const file = new File([blob], "document.html");
@@ -38,8 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           console.log("File saved to Dropbox successfully.");
+          // --------My added on feature - Displaying a message when file is saved to dropbox------
+          message.textContent = "File saved successfully!";
+          message.style.textAlign = "center";
+          message.style.color = "#fff";
+          bodySection.append(message);
         } else {
           console.error("Error saving file to Dropbox:", response.statusText);
+          // -------My added on feature - Displaying an error message if there is an error--------
+          message.textContent = "Something went wrong ☹️";
+          message.style.textAlign = "center";
+          message.style.color = "#fff";
+          bodySection.append(message);
         }
       })
       .catch((error) => {
