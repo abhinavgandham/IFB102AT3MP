@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 require("dotenv").config();
-const port = process.env.PORT;
+const port = process.env.PORT || 3030;
 const fs = require("fs");
 const https = require("https");
 
