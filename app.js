@@ -25,7 +25,7 @@ app.get("/api/access-token", (req, res) => {
   res.json({ accessToken: process.env.accessToken });
 });
 
-const postData = `refresh_token=8MmYJjmPPFMAAAAAAAAAAYsDGnf7fC655d9G1VhrSCgv5lI9gCEeVr82ZGTujgES&grant_type=refresh_token&client_id=0dc8hbklx489vn5&client_secret=h870pkmfatftvzg`;
+const postData = `refresh_token=XxLoxhopCkQAAAAAAAAAAei7uQRBqfH9Tj9mNVrVdlhhCYiOzVq7JEBfTeku1lqT&grant_type=refresh_token&client_id=0dc8hbklx489vn5&client_secret=h870pkmfatftvzg`;
 
 const options = {
   hostname: "api.dropbox.com",
