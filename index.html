@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>TinyMCE Editor</title>
+    <title>Content Management System</title>
     <script
       src="https://cdn.tiny.cloud/1/31tjk4obte2rubg3dk448mlci9rqzay3dm22vj34z6lmroqg/tinymce/6/tinymce.min.js"
       referrerpolicy="origin"
@@ -18,12 +18,30 @@
   </head>
   <body class="bg-primary">
     <!--Setting the size and style of the heading and centering it  -->
-    <h1 class="display-4 text-center mt-4 text-white">TinyMCE Editor</h1>
+    <h1 class="display-4 text-center mt-4 text-white">
+      Rich Text Content Management System (RTCMS)
+    </h1>
+    <h2 class="display-4 text-center mt-4 text-white">Content Editor</h2>
     <div class="text-center">
-      <button id="save-button" class="btn-lg rounded-2">Save</button>
+      <button id="refreshButton" class="btn-lg rounded-2">
+        Refresh File List
+      </button>
+      <select id="fileList" size="1">
+        <option value="document">select a file</option>
+      </select>
       <button id="load-button" class="btn-lg rounded-2">Load</button>
     </div>
+    <br />
     <textarea id="editor" class="pl-3 pr-3"></textarea>
-    <script src="/main.js"></script>
+    <br />
+    <div class="text-center">
+      <input type="text" id="filenameInput" placeholder="Enter filename" />
+      <button id="save-button" class="btn-lg rounded-2">
+        Upload and Save to Dropbox
+      </button>
+      <!-- <button id="save-button" class="btn-lg rounded-2">Save</button> -->
+      <!-- <button id="load-button" class="btn-lg rounded-2">Load</button> -->
+    </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
